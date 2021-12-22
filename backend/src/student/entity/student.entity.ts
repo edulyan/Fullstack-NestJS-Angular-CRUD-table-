@@ -16,8 +16,8 @@ export class Student {
   @Column()
   secondname: string;
 
-  @Column()
-  birthday: Date;
+  @Column({ type: 'date' })
+  birthday: string;
 
   @Column()
   university: string;
@@ -25,6 +25,6 @@ export class Student {
   @Column()
   faculty: string;
 
-  @CreateDateColumn()
-  applyDate!: Date;
+  @CreateDateColumn({ type: 'date' })
+  applyDate!: string;
 }
