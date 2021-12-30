@@ -28,3 +28,5 @@ export class Student {
   @CreateDateColumn({ type: 'date' })
   applyDate!: string;
 }
+
+//dsdas
